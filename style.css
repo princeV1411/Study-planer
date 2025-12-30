@@ -4,19 +4,24 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+:root{
+    /* colours */
+    --colour1:#283618;
+    --colour2:#606c38;
+    --colour3:#fefae0;
+    --colour4:#dda15e;
+}
 #container{
     width: 100%;
     height: 100vh;
-    /* position: fixed; */
-    /* background-color: beige; */
+    background-color: var(--colour3);
 
 }
 
 nav{
     width: 100%;
     height: 12%;
-    background-color:rgb(155, 108, 155);
+    background-color:var(--colour2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,16 +31,13 @@ nav{
 
 nav .logo{
     text-transform: capitalize;
-    background-color: rgb(132, 185, 174);
     font-size: 30px;
     padding: 0px 8px;
     letter-spacing: 2px;
-    /* color: rgb(24, 24, 24); */
-    color: white;
-
+    color: var(--colour3);
 }
 nav .logo span{
-    color: rgb(2, 132, 245);
+    color: var(--colour4);
     font-weight: 600;
 }
 
@@ -53,6 +55,9 @@ nav .login button{
     border-radius: 10px;
     border: 0;
     transition: 0.1s;
+    background-color: var(--colour3);
+    color: var(--colour1);
+    font-weight: 600;
 }
 .login button:hover{
     background-color: rgb(219, 255, 183);
@@ -61,9 +66,9 @@ nav .login button{
 nav .login .profile{
     width: 35px;
     height: 35px;
-    background-color:rgb(152, 145, 197);
+    background-color:var(--colour3);
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid var(--colour1);
     transition: 0.9s;
 }
 .login .profile:hover{
@@ -82,12 +87,10 @@ nav .login .profile{
 .context-1{
     height: 220px;
     flex-basis: 55%;
-    /* background-color:khaki; */
-    color:rgba(0, 0, 0, 0.767);
-    
 }
 .context-1 .sub-head h1{
     font-size: 56px;
+    
 }
 .context-1 .sub-head h2{
     font-size: 32px;
@@ -100,7 +103,6 @@ nav .login .profile{
 .context-2{
     flex-basis: 40%;
     height: 220px;
-    background-color: rgb(214, 229, 230);
     background-image: url(img/fist.jpg);
     /* overflow: hidden; */
     background-size: cover;
@@ -108,18 +110,20 @@ nav .login .profile{
 }
 .context-2 img{
     width: 100%;
+    filter:opacity(20%);
 }
 .mid-text{
-    /* background-color:palevioletred; */
     height: fit-content;
     width: fit-content;
-    margin-top: 110px;
+    margin-top: 60px;
     margin-left: 10px;
+    transition: 1s;
+}
+.mid-text:hover{
+    font-size: 17px;
 }
 /* ---------------------box------------------------------- */
 .box{
-    /* background-color:lightgray; */
-
     width: 100%;
     height: 45%;
     /* padding: 0px 50px; */
@@ -141,10 +145,10 @@ nav .login .profile{
 .box .bb .part-1{
     width: 100%;
     height: 40%;
-    background-color:rgba(105, 90, 205, 0.534);
+    background-color: var(--colour1);
     border-radius: 20px 20px 0 0;
     text-transform: capitalize;
-
+    color: var(--colour3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,10 +156,11 @@ nav .login .profile{
 .box .bb .part-2{   
     width: 100%;
     height: 60%;
-    background-color: rgba(144, 238, 144, 0.678);
+    background-color: var(--colour2);
     border-radius: 0 0 20px 20px;
     padding: 20px 10px;
-    text-align: start;
+    text-align: center;
+    color: var(--colour3);
 }
 .box .bb .cir-img{
     position: relative;
@@ -164,7 +169,7 @@ nav .login .profile{
     top: -155px;
     width: 40px;
     height: 40px;
-    background-color: rgb(211, 211, 211);
+    background-color:var(--colour3);
     border-radius: 50%;
     
 }
@@ -181,7 +186,6 @@ nav .login .profile{
 .syll{
     width: 80%;
     height: 80%;
-    /* background-color: #aacc20; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -197,8 +201,6 @@ nav .login .profile{
 .item{
     width: 95%;
     height: 60vh;
-    /* background-color: rgb(247, 252, 183); */
-    /* margin: 10px 20px;  */
     padding: 60px 100px;
     display: flex;
     flex-wrap: wrap;
@@ -209,7 +211,6 @@ nav .login .profile{
     height: 80px;
     background-color:#e6e6e6;
     margin: 5px;
-    /* margin-right: 25px; */
     border-radius: 20px;
     text-align: center;
     font-size: 1.5em;
@@ -233,9 +234,9 @@ nav .login .profile{
 #page2{
     width: 100%;
     height: 94vh;
-    background-color: #1b1b1b;  
+    background-color: #ffffff;  
     padding : 5% 10% ;
-    color: #fff;
+    color: #000000;
 
 }
 .copyright{
@@ -250,7 +251,7 @@ nav .login .profile{
 .sub-title{
     font-size: 60px;
     font-weight: 600;   
-    color: #ffffff;                       /*change */             
+    color: #000000;                       /*change */             
 }
 .btn.btn2{
     display: inline-block;
@@ -274,44 +275,35 @@ nav .login .profile{
     width: fit-content;
     display: flex;
     flex-direction: column;
-    /* background-color: aqua; */
 }
 .contact-left .p-l .icon{
     margin: 30px 0 0;
-
+    
 }
 .contact-left .p-r{
     width: fit-content;
     padding: 10px;
-
-    /* background-color: chartreuse; */
 }
 .contact-left p{
     width: fit-content;
     margin-top: 30px;
     margin-left: 20px;
-}
-
-.contact-left p{
-    color:#ababab;
-    /* margin-right: 15px; */
+    color: black;
     font-size: 18   px;
 }
+
 .social-icons {
     margin: 30px 0 0;
-    /* background-color: #db3161; */
     display: flex;
 }
 .icon{
     width: 30px;
     height: 30px;
-    /* background-color: #fff; */
     margin: 0 10px;
 }
 .icon img{
     width: 100%;
     background-size: cover;
-    /* background-color: #f5f5f5; */
     transition: transform 0.5s;
 
 }
@@ -323,7 +315,7 @@ nav .login .profile{
 
 .btn.btn2{
     display: inline-block;
-    background:#ff004f;           /*change */
+    background:#ff3e7b;           /*change */
     font-size: 1.5em;
 }
 .btn{
@@ -331,7 +323,7 @@ nav .login .profile{
     margin: 50px auto;
     width: fit-content;
     padding: 14px 50px;
-    border: 1px solid #db3161;      /*change */
+    border: 1px solid #ff457a;      /*change */
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
@@ -346,10 +338,10 @@ form input,form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;       /*change   #262626*/ 
+    background:#ababab;  
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: #ffffff;
     font-size: 18px;
     border-radius: 10px;
 }
@@ -395,18 +387,18 @@ form .btn2{
         height: 140px;
     }
     .context-2{
-        height: 150px;
+        height: 220px;
         z-index: 1;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 30px;
     }
     .context-1 .sub-head h1{
         font-size: 32px;
-        /* background-color: #b19ca2; */
     }
     .sub-head{
         height: 100%;
-        /* background-color: #ff004f; */
     }
-    /* check sub head */
     .context-1 .sub-head h2{
         font-size: 20px;
     }
@@ -417,13 +409,14 @@ form .btn2{
     .box{
         height: 240px;
         justify-content:space-evenly;
+        margin-top: 24px;
     }
     .box .bb{
         width: 110px;
         height: 110px;
     }
     .box .bb .part-1{
-        font-size: 10px;
+        font-size: 8px;
     }   
     .box .bb .part-2{
        font-size: 10px ;
@@ -437,8 +430,9 @@ form .btn2{
         height: 20px;
     }
     .mid-text{
-        margin-top: 45%;
+        margin-top: 60%;
         font-size: 12px;
+        background-color: #ff004f;
     }
     #links{
         width: 100%;
@@ -446,7 +440,6 @@ form .btn2{
         height: 100vh;
         padding: 12px;
         font-size: 12px;
-        /* background-color: chartreuse; */
     }
     .ss{
         width: 320px;
@@ -454,8 +447,6 @@ form .btn2{
         text-align: center;
         font-size: 20px;
         border-radius: 20px;
-        /* padding: 0; */
-        /* margin: 0; */
         gap: 0;
     }
     .item{
@@ -466,7 +457,7 @@ form .btn2{
         padding: 20px 0%;
         align-items: flex-start;
     }
-    .sub-title{
+    .syll .sub-title{
         height: 10%;
         display: flex;
         justify-content: center;
@@ -480,7 +471,6 @@ form .btn2{
     .syll h3{
         width: fit-content;
         font-size: 36px;
-        /* text-align: center; */
     }
 
     #page2{
@@ -491,10 +481,9 @@ form .btn2{
     .rowsss{
         height: 80%;
     }
-    .contact-left .sub-title{
+    .sub-title{
         font-size: 32px;
-        text-align: end ;
-    }
+        }
     .contact-left,.contact-right{
         flex-basis: 100%;
         padding: 10px 10px;
@@ -515,11 +504,8 @@ form .btn2{
         font-size: 32px;
     }
     .btn2{
-        /* margin-top: 0; */
         font-size: 12px;
         text-align: center;
-        /* margin-bottom: 20px; */
-        /* align-items: center; */
     }
     .btn.btn2{
         text-align: center;
@@ -539,6 +525,5 @@ form .btn2{
         width: 100%;
         height: 50px;
         font-size: 20px;
-        /* padding: 16px 50px; */
     }
 }
