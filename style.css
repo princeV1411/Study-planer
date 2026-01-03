@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 :root{
     /* colours them 1*/
     /* --colour1:#283618;
@@ -17,16 +20,11 @@
     --colour3:#C8D9E6;
     --colour4:#F5EFEB;
     --colour5:#FFFFFF;
-
-
-
-
 }
 #container{
     width: 100%;
     height: 100vh;
     background-color: var(--colour3);
-
 }
 
 nav{
@@ -138,11 +136,9 @@ nav .login .profile{
 .box{
     width: 100%;
     height: 45%;
-    /* padding: 0px 50px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position:relative */
     flex-wrap: wrap;
 }
 .box .bb{
@@ -177,13 +173,11 @@ nav .login .profile{
 .box .bb .cir-img{
     position: relative;
     left: 42%;
-    
     top: -155px;
     width: 40px;
     height: 40px;
     background-color:var(--colour4);
     border-radius: 50%;
-    
 }
 
 #links{
@@ -238,11 +232,6 @@ nav .login .profile{
     color: rgb(255, 255, 255);
 }
 
-
-
-
-
-
 /* -------------------contact----------------------- */
 #page2{
     width: 100%;
@@ -252,20 +241,10 @@ nav .login .profile{
     color: #000000;
 
 }
-.copyright{
-    width: 100%;
-    height: 6vh;
-    background-color: var(--colour3);
-    color: black;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    padding-top: 8px;
-}
 .sub-title{
     font-size: 60px;
     font-weight: 600;   
-    color: var(--colour3);                       /*change */             
+    color: var(--colour3);                            
 }
 .btn.btn2{
     display: inline-block;
@@ -288,12 +267,11 @@ nav .login .profile{
     width: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding-top: 25px;
+    justify-content: space-around;
+    padding-top: 35px;
 }
 .contact-left .p-l .icon{
-    /* margin: 20px 0px 0px 0px; */
-    width: 30px;
+    width: 25px;
 }
 .contact-left .p-r{
     width: fit-content;
@@ -302,7 +280,6 @@ nav .login .profile{
 .contact-left p{
     width: fit-content;
     margin-top: 30px;
-    margin-left: 20px;
     color: var(--colour3);
     font-size: 18   px;
 }
@@ -312,15 +289,13 @@ nav .login .profile{
     display: flex;
 }
 .icon{
-    width: 30px;
-    height: 30px;
+    width: 25px;
     margin: 0 10px;
 }
 .icon img{
     width: 100%;
     background-size: cover;
     transition: transform 0.5s;
-
 }
 
 .social-icons img:hover{
@@ -329,7 +304,7 @@ nav .login .profile{
 
 .btn.btn2{
     display: inline-block;
-    background:var(--colour2);           /*change */
+    background:var(--colour2);           
     font-size: 1.5em;
 }
 .btn{
@@ -368,6 +343,16 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
+.copyright{
+    width: 100%;
+    height: 6vh;
+    background-color: var(--colour3);
+    color:#4b4b4b;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 8px;
+}
 
 
 
@@ -377,9 +362,6 @@ form .btn2{
         width: 100%;
         height: 8%;
         padding: 2px 10px;
-        /* display: flex;
-        justify-content: space-between; */
-        /* position: fixed; */
     }
     nav .logo{
         font-size: 26px;
@@ -427,7 +409,6 @@ form .btn2{
     .box{
         height: 240px;
         justify-content:space-evenly;
-        /* margin-top: 24px; */
     }
     .box .bb{
         width: 110px;
@@ -542,6 +523,8 @@ form .btn2{
     .copyright{
         width: 100%;
         height: 50px;
-        font-size: 20px;
+        font-size: 16px;
+        padding-top: 12px;
+        text-align: center;
     }
 }
