@@ -183,7 +183,7 @@ nav .login .profile{
 #links{
     width: 100%;
     height: 100vh;
-    background-color:var(--colour3);
+    background-color:var(--colourmain);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,7 +198,7 @@ nav .login .profile{
     align-items: center;
 }
 .syll h3{
-    font-size: 30px;
+    font-size: px;
     width: fit-content;
     color: #262626;
     padding: 20px;
@@ -215,7 +215,7 @@ nav .login .profile{
 .ss{
     width: 360px;
     height: 80px;
-    background-color:var(--colour2);
+    background-color:var(--colour3);
     margin: 5px;
     border-radius: 20px;
     text-align: center;
@@ -223,13 +223,13 @@ nav .login .profile{
     text-transform: capitalize;
     padding: 25px;
     font-weight: 600;
-    color: var(--colour4);
+    color: var(--colour1);
     transition: 0.8s;
 }
 .ss:hover{
     transform: scale(95%);
-    box-shadow: 1px 1px 30px rgb(27, 202, 255);
-    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 25px var(--colour2);
+    color: rgb(0, 0, 0);
 }
 
 /* -------------------contact----------------------- */
@@ -373,9 +373,14 @@ form .btn2{
         width: 100%;
         height: 100vh;
     }
+    hr{
+        height: 3px;
+        /* background-color: var(--colour1); */
+        /* border-color: none; */
+    }
     #main{
         height: 85%;
-        padding: 18px 5px;
+        padding: 20px 5px 0 5px;
     }
 
     .context-1,.context-2{
@@ -384,7 +389,7 @@ form .btn2{
         padding: 1px 5px;
     }
     .context-1{
-        height: 140px;
+        height: 100px;
     }
     .context-2{
         display: none;
@@ -396,48 +401,54 @@ form .btn2{
         background-image: none;
     }
     .context-1 .sub-head h1{
-        font-size: 32px;
+        font-size: 30px;
         color: var(--colour1);
     }
     .sub-head{
         height: 100%;
     }
     .context-1 .sub-head h2{
-        font-size: 20px;
+        font-size: 18px;
+        margin-top: 2px;
         color: var(--colour1);
     }
     .context-1 .sub-head p{
-        font-size: 16px;
+        font-size: 12px;
+        margin-top: 10px;
 
     }
     .box{
-        height: 240px;
+        height: 440px;
         justify-content:space-evenly;
+        padding-top: 20px;
         /* flex-wrap: wrap; */
     }
     .box .bb{
-        width: 110px;
-        height: 110px;
+        width: 140px;
+        height: 130px;
+        /* margin-bottom: 4px; */
     }
     .box .bb .part-1{
         font-size: 8px;
     }   
     .box .bb .part-2{
        font-size: 10px ;
-       padding: 8px 6px;
+       padding: 18px 10px 0px 10px;
        text-align: center;
     }
     .box .bb .cir-img{
         top: -70%;
         left: 40%;
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
     }
     .mid-text{
-        display: none;
-        margin-top: 60%;
+        /* display: none; */
+        margin-top: 6%;
+        margin-left: 0;
         font-size: 12px;
-        background-color: #ff004f;
+        /* padding: 1px 0px; */
+        /* background-color:tomato; */
     }
     #links{
         width: 100%;
@@ -475,7 +486,7 @@ form .btn2{
     }
     .syll h3{
         width: fit-content;
-        font-size: 36px;
+        font-size: 24px;
     }
 
     #page2{
