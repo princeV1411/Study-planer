@@ -28,3 +28,9 @@ document.querySelector(".box1").addEventListener("click", function(){
         behavior:"smooth"
     });
 });
+
+document.querySelector(".box4").addEventListener("click", function(){
+    document.querySelector(".page3").scrollIntoView({
+        behavior:"smooth"
+    });
+});
